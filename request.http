@@ -1,0 +1,45 @@
+
+//crear usuario
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "sebastian ",
+    "apellido": "lisboa",
+    "correo": "sebastianlisboa@gmail.com",
+    "telefono": "+56949198565"
+}
+
+//mostrar todos los usuarios
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+
+//buscar por ID
+###
+GET http://localhost:9000/api/users/ id HTTP/1.1
+
+
+// modificar usuario
+###
+PUT  http://localhost:9000/api/users/629ff9ac61db50834d2e9cc0 HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "nombre": "katherine ",
+    "apellido": "ahumada",
+    "correo": "juanramirezcatrileo@gmail.com",
+    "telefono": "+56949198565"
+}
+
+
+// eliminar usuario
+
+###
+DELETE http://localhost:9000/api/users/629ff9ac61db50834d2e9cc0 HTTP/1.1
+
+//mostrar todos los reservas
+###
+GET http://localhost:9000/api/reservas HTTP/1.1
